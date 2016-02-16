@@ -1,0 +1,843 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<RootNamespace></RootNamespace>
+	<ProjectGuid>{FA6E6DB4-2F00-1791-A0C6-C7FC3B65BAA1}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+	<BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_5_2_2;UNITY_5_2;UNITY_5;ENABLE_NEW_BUGREPORTER;ENABLE_2D_PHYSICS;ENABLE_4_6_FEATURES;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_REFLECTION_BUFFERS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_LOCALIZATION;ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION;UNITY_ANDROID;UNITY_ANDROID_API;ENABLE_SUBSTANCE;ENABLE_TEXTUREID_MAP;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE;UNITY_PRO_LICENSE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="System.Xml.Linq" />
+	<Reference Include="UnityEngine">
+	  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\ColorQuiz\Scripts\GamePlay.cs" />
+     <Compile Include="Assets\ColorQuiz\Scripts\GamePlay2.cs" />
+     <Compile Include="Assets\ColorQuiz\Scripts\GamePlay3.cs" />
+     <Compile Include="Assets\ColorQuiz\Scripts\PlayCircle.cs" />
+     <Compile Include="Assets\ColorQuiz\Scripts\StarGame.cs" />
+     <Compile Include="Assets\Extensions\AndroidNative\Billing\Manage\AndroidInAppPurchaseManager.cs" />
+     <Compile Include="Assets\Extensions\AndroidNative\Billing\Models\AndroidInventory.cs" />
+     <Compile Include="Assets\Extensions\AndroidNative\Billing\Models\BillingResult.cs" />
+     <Compile Include="Assets\Extensions\AndroidNative\Billing\Tasks\InitAndroidInventoryTask.cs" />
+     <Compile Include="Assets\Extensions\AndroidNative\Billing\Templates\GoogleProductTemplate.cs" />
+     <Compile Include="Assets\Extensions\AndroidNative\Billing\Templates\GooglePurchaseTemplate.cs" />
+     <Compile Include="Assets\Extensions\AndroidNative\Enum\AndroidDialogResult.cs" />
+     <Compile Include="Assets\Extensions\AndroidNative\Enum\BillingResponseCodes.cs" />
+     <Compile Include="Assets\Extensions\AndroidNative\Enum\GooglePurchaseState.cs" />
+     <Compile Include="Assets\Extensions\AndroidNative\Other\Analytics\AndroidGoogleAnalytics.cs" />
+     <Compile Include="Assets\Extensions\AndroidNative\Other\Features\AddressBookController.cs" />
+     <Compile Include="Assets\Extensions\AndroidNative\Other\Features\AndroidAppInfoLoader.cs" />
+     <Compile Include="Assets\Extensions\AndroidNative\Other\Features\AndroidCamera.cs" />
+     <Compile Include="Assets\Extensions\AndroidNative\Other\Features\AndroidNativeUtility.cs" />
+     <Compile Include="Assets\Extensions\AndroidNative\Other\Features\AndroidSocialGate.cs" />
+     <Compile Include="Assets\Extensions\AndroidNative\Other\Features\ImmersiveMode.cs" />
+     <Compile Include="Assets\Extensions\AndroidNative\Other\Models\PackageAppInfo.cs" />
+     <Compile Include="Assets\Extensions\AndroidNative\Other\Notifications\AndroidNotificationManager.cs" />
+     <Compile Include="Assets\Extensions\AndroidNative\Other\Notifications\AndroidToast.cs" />
+     <Compile Include="Assets\Extensions\AndroidNative\Other\Templates\AndroidABAddress.cs" />
+     <Compile Include="Assets\Extensions\AndroidNative\Other\Templates\AndroidABChat.cs" />
+     <Compile Include="Assets\Extensions\AndroidNative\Other\Templates\AndroidABEmail.cs" />
+     <Compile Include="Assets\Extensions\AndroidNative\Other\Templates\AndroidABOrganization.cs" />
+     <Compile Include="Assets\Extensions\AndroidNative\Other\Templates\AndroidContactInfo.cs" />
+     <Compile Include="Assets\Extensions\AndroidNative\Other\Templates\AndroidImagePickResult.cs" />
+     <Compile Include="Assets\Extensions\AndroidNative\PlayService\Manage\GoogleCloudManager.cs" />
+     <Compile Include="Assets\Extensions\AndroidNative\PlayService\Manage\GoogleCloudMessageService.cs" />
+     <Compile Include="Assets\Extensions\AndroidNative\PlayService\Manage\GooglePlayConnection.cs" />
+     <Compile Include="Assets\Extensions\AndroidNative\PlayService\Manage\GooglePlayManager.cs" />
+     <Compile Include="Assets\Extensions\AndroidNative\PlayService\Manage\GooglePlayRTM.cs" />
+     <Compile Include="Assets\Extensions\AndroidNative\PopUps\AndroidDialog.cs" />
+     <Compile Include="Assets\Extensions\AndroidNative\PopUps\AndroidMessage.cs" />
+     <Compile Include="Assets\Extensions\AndroidNative\PopUps\AndroidRateUsPopUp.cs" />
+     <Compile Include="Assets\Extensions\AndroidNative\PopUps\Base\BaseAndroidPopup.cs" />
+     <Compile Include="Assets\Extensions\AndroidNative\xExample\Scripts\AdMob\AndroidAdMobBanner.cs" />
+     <Compile Include="Assets\Extensions\AndroidNative\xExample\Scripts\AdMob\AndroidAdMobBannerInterstitial.cs" />
+     <Compile Include="Assets\Extensions\AndroidNative\xExample\Scripts\AdMob\AndroidGoogleAdsExample.cs" />
+     <Compile Include="Assets\Extensions\AndroidNative\xExample\Scripts\AdMob\AndroidGoogleAdsExample_old.cs" />
+     <Compile Include="Assets\Extensions\AndroidNative\xExample\Scripts\Base\AndroidNativeExampleBase.cs" />
+     <Compile Include="Assets\Extensions\AndroidNative\xExample\Scripts\Billing\BillingExample.cs" />
+     <Compile Include="Assets\Extensions\AndroidNative\xExample\Scripts\Billing\GPaymnetManagerExample.cs" />
+     <Compile Include="Assets\Extensions\AndroidNative\xExample\Scripts\Billing\GameBillingManagerExample.cs" />
+     <Compile Include="Assets\Extensions\AndroidNative\xExample\Scripts\Billing\GameDataExample.cs" />
+     <Compile Include="Assets\Extensions\AndroidNative\xExample\Scripts\Billing\GamePlayExample.cs" />
+     <Compile Include="Assets\Extensions\AndroidNative\xExample\Scripts\DataTemplates\CustomLeaderboardFiledsHolder.cs" />
+     <Compile Include="Assets\Extensions\AndroidNative\xExample\Scripts\DataTemplates\CustomPlayerUIRow.cs" />
+     <Compile Include="Assets\Extensions\AndroidNative\xExample\Scripts\JS\CSharpAPIHelper.cs" />
+     <Compile Include="Assets\Extensions\AndroidNative\xExample\Scripts\Networking\RTM_Game_Example.cs" />
+     <Compile Include="Assets\Extensions\AndroidNative\xExample\Scripts\Others\AnOtherFeaturesPreview.cs" />
+     <Compile Include="Assets\Extensions\AndroidNative\xExample\Scripts\Others\AnalyticsUseExample.cs" />
+     <Compile Include="Assets\Extensions\AndroidNative\xExample\Scripts\Others\AndroidPopUpExamples.cs" />
+     <Compile Include="Assets\Extensions\AndroidNative\xExample\Scripts\Others\NotoficationsExample.cs" />
+     <Compile Include="Assets\Extensions\AndroidNative\xExample\Scripts\Others\PreviewSceneController.cs" />
+     <Compile Include="Assets\Extensions\AndroidNative\xExample\Scripts\PlayService\GoogleCloudUseExample.cs" />
+     <Compile Include="Assets\Extensions\AndroidNative\xExample\Scripts\PlayService\PlayServicFridnsLoadExample_New.cs" />
+     <Compile Include="Assets\Extensions\AndroidNative\xExample\Scripts\PlayService\PlayServiceCustomLBExample.cs" />
+     <Compile Include="Assets\Extensions\AndroidNative\xExample\Scripts\PlayService\PlayServiceExample.cs" />
+     <Compile Include="Assets\Extensions\AndroidNative\xExample\Scripts\Social\AndroidSocialNativeExample.cs" />
+     <Compile Include="Assets\Extensions\FlashLikeEvents\Events\Core\Events\EventDispatcher.cs" />
+     <Compile Include="Assets\Extensions\FlashLikeEvents\Events\Core\Events\EventDispatcherBase.cs" />
+     <Compile Include="Assets\Extensions\FlashLikeEvents\Events\Data\BaseEvent.cs" />
+     <Compile Include="Assets\Extensions\FlashLikeEvents\Events\Templates\CEvent.cs" />
+     <Compile Include="Assets\Extensions\FlashLikeEvents\Events\interfaces\IDispatcher.cs" />
+     <Compile Include="Assets\Extensions\FlashLikeEvents\Example\Scripts\EventButtonExample.cs" />
+     <Compile Include="Assets\Extensions\FlashLikeEvents\Example\Scripts\ExampleListner.cs" />
+     <Compile Include="Assets\Extensions\FlashLikeEvents\Example\Scripts\FLButtonExample.cs" />
+     <Compile Include="Assets\Extensions\FlashLikeEvents\Example\Scripts\FLExampleListner.cs" />
+     <Compile Include="Assets\Extensions\GoogleAnalytics\Core\GoogleAnalytics.cs" />
+     <Compile Include="Assets\Extensions\GoogleAnalytics\Core\GoogleAnalyticsClient.cs" />
+     <Compile Include="Assets\Extensions\GoogleAnalytics\Core\GoogleAnalyticsRequestCash.cs" />
+     <Compile Include="Assets\Extensions\GoogleAnalytics\Enum\GoogleAnalyticsHitType.cs" />
+     <Compile Include="Assets\Extensions\GoogleAnalytics\Example\Scripts\GoogleAnalyticsUseExample.cs" />
+     <Compile Include="Assets\Extensions\GoogleAnalytics\Templates\GAPlatfromBound.cs" />
+     <Compile Include="Assets\Extensions\GoogleAnalytics\Templates\GAProfile.cs" />
+     <Compile Include="Assets\Extensions\GoogleAnalytics\Templates\GoogleAnalyticsSettings.cs" />
+     <Compile Include="Assets\Extensions\GoogleMobileAd\Example\Scripts\AdMobBanner.cs" />
+     <Compile Include="Assets\Extensions\GoogleMobileAd\Example\Scripts\AdMobBannerInterstitial.cs" />
+     <Compile Include="Assets\Extensions\GoogleMobileAd\Example\Scripts\CustomInterstisialExample.cs" />
+     <Compile Include="Assets\Extensions\GoogleMobileAd\Example\Scripts\GoogleAdsExample.cs" />
+     <Compile Include="Assets\Extensions\GoogleMobileAd\Scripts\Core\GoogleMobileAd.cs" />
+     <Compile Include="Assets\Extensions\GoogleMobileAd\Scripts\Core\GoogleMobileAdSettings.cs" />
+     <Compile Include="Assets\Extensions\GoogleMobileAd\Scripts\IOS\IOSADBanner.cs" />
+     <Compile Include="Assets\Extensions\GoogleMobileAd\Scripts\IOS\IOSAdMobController.cs" />
+     <Compile Include="Assets\Extensions\GoogleMobileAd\Scripts\WP8\WP8ADBanner.cs" />
+     <Compile Include="Assets\Extensions\GoogleMobileAd\Scripts\WP8\WP8AdMobController.cs" />
+     <Compile Include="Assets\Extensions\GooglePlayCommon\Ad\AndroidAdMobController.cs" />
+     <Compile Include="Assets\Extensions\GooglePlayCommon\Core\AndroidNative.cs" />
+     <Compile Include="Assets\Extensions\GooglePlayCommon\Core\AndroidNativeSettings.cs" />
+     <Compile Include="Assets\Extensions\GooglePlayCommon\Core\SocialPlatfromSettings.cs" />
+     <Compile Include="Assets\Extensions\GooglePlayCommon\Enum\AndroidBase\AdroidActivityResultCodes.cs" />
+     <Compile Include="Assets\Extensions\GooglePlayCommon\Enum\AndroidBase\AndroidGravity.cs" />
+     <Compile Include="Assets\Extensions\GooglePlayCommon\Enum\AndroidBase\AndroidLogLevel.cs" />
+     <Compile Include="Assets\Extensions\GooglePlayCommon\Enum\AndroidBase\AndroidMonth.cs" />
+     <Compile Include="Assets\Extensions\GooglePlayCommon\Enum\GoogleBase\GoogleCloudSlot.cs" />
+     <Compile Include="Assets\Extensions\GooglePlayCommon\Enum\GoogleBase\GoogleGenger.cs" />
+     <Compile Include="Assets\Extensions\GooglePlayCommon\Enum\GoogleBase\GoogleGravity.cs" />
+     <Compile Include="Assets\Extensions\GooglePlayCommon\Enum\GoogleMobileAd\GADBannerSize.cs" />
+     <Compile Include="Assets\Extensions\GooglePlayCommon\Enum\GoogleMobileAd\GADInAppResolution.cs" />
+     <Compile Include="Assets\Extensions\GooglePlayCommon\Enum\PlayService\GPAchievementState.cs" />
+     <Compile Include="Assets\Extensions\GooglePlayCommon\Enum\PlayService\GPAchievementType.cs" />
+     <Compile Include="Assets\Extensions\GooglePlayCommon\Enum\PlayService\GPBoardTimeSpan.cs" />
+     <Compile Include="Assets\Extensions\GooglePlayCommon\Enum\PlayService\GPCollectionType.cs" />
+     <Compile Include="Assets\Extensions\GooglePlayCommon\Enum\PlayService\GPConnectionState.cs" />
+     <Compile Include="Assets\Extensions\GooglePlayCommon\Enum\PlayService\GPGameRequestType.cs" />
+     <Compile Include="Assets\Extensions\GooglePlayCommon\Enum\PlayService\GPLogLevel.cs" />
+     <Compile Include="Assets\Extensions\GooglePlayCommon\Enum\PlayService\GP_AppStateStatusCodes.cs" />
+     <Compile Include="Assets\Extensions\GooglePlayCommon\Enum\PlayService\GP_ConnectionResultCode.cs" />
+     <Compile Include="Assets\Extensions\GooglePlayCommon\Enum\PlayService\GP_GamesActivityResultCodes.cs" />
+     <Compile Include="Assets\Extensions\GooglePlayCommon\Enum\PlayService\GP_GamesStatusCodes.cs" />
+     <Compile Include="Assets\Extensions\GooglePlayCommon\Enum\PlayService\GP_RTM_MessageType.cs" />
+     <Compile Include="Assets\Extensions\GooglePlayCommon\Enum\PlayService\GP_RTM_PackageType.cs" />
+     <Compile Include="Assets\Extensions\GooglePlayCommon\Enum\PlayService\GP_RTM_ParticipantStatus.cs" />
+     <Compile Include="Assets\Extensions\GooglePlayCommon\Enum\PlayService\GP_RTM_RoomStatus.cs" />
+     <Compile Include="Assets\Extensions\GooglePlayCommon\Events\FacebookEvents.cs" />
+     <Compile Include="Assets\Extensions\GooglePlayCommon\Events\GoogleMobileAdEvents.cs" />
+     <Compile Include="Assets\Extensions\GooglePlayCommon\Events\TwitterEvents.cs" />
+     <Compile Include="Assets\Extensions\GooglePlayCommon\Interfaces\GoogleMobileAdBanner.cs" />
+     <Compile Include="Assets\Extensions\GooglePlayCommon\Interfaces\GoogleMobileAdInterface.cs" />
+     <Compile Include="Assets\Extensions\GooglePlayCommon\Models\AndroidADBanner.cs" />
+     <Compile Include="Assets\Extensions\GooglePlayCommon\Models\AndroidActivityResult.cs" />
+     <Compile Include="Assets\Extensions\GooglePlayCommon\Models\AndroidGameActivityResult.cs" />
+     <Compile Include="Assets\Extensions\GooglePlayCommon\Models\AsyncTask.cs" />
+     <Compile Include="Assets\Extensions\GooglePlayCommon\Models\GADBannerIdFactory.cs" />
+     <Compile Include="Assets\Extensions\GooglePlayCommon\Models\GPAchievement.cs" />
+     <Compile Include="Assets\Extensions\GooglePlayCommon\Models\GPGameRequest.cs" />
+     <Compile Include="Assets\Extensions\GooglePlayCommon\Models\GPLeaderBoard.cs" />
+     <Compile Include="Assets\Extensions\GooglePlayCommon\Models\GPScoreCollection.cs" />
+     <Compile Include="Assets\Extensions\GooglePlayCommon\Models\GP_Participant.cs" />
+     <Compile Include="Assets\Extensions\GooglePlayCommon\Models\GP_RTM_Invite.cs" />
+     <Compile Include="Assets\Extensions\GooglePlayCommon\Models\GP_RTM_Network_Package.cs" />
+     <Compile Include="Assets\Extensions\GooglePlayCommon\Models\GP_RTM_Result.cs" />
+     <Compile Include="Assets\Extensions\GooglePlayCommon\Models\GP_RTM_Room.cs" />
+     <Compile Include="Assets\Extensions\GooglePlayCommon\Models\GoogleCloudResult.cs" />
+     <Compile Include="Assets\Extensions\GooglePlayCommon\Models\GooglePlayConnectionResult.cs" />
+     <Compile Include="Assets\Extensions\GooglePlayCommon\Models\GooglePlayGiftRequestResult.cs" />
+     <Compile Include="Assets\Extensions\GooglePlayCommon\Models\GooglePlayResult.cs" />
+     <Compile Include="Assets\Extensions\GooglePlayCommon\PUtil\ANMiniJSON.cs" />
+     <Compile Include="Assets\Extensions\GooglePlayCommon\PUtil\PlayServiceUtil.cs" />
+     <Compile Include="Assets\Extensions\GooglePlayCommon\PUtil\SA_Singleton.cs" />
+     <Compile Include="Assets\Extensions\GooglePlayCommon\PUtil\WWWTextureLoader.cs" />
+     <Compile Include="Assets\Extensions\GooglePlayCommon\Templates\GPScore.cs" />
+     <Compile Include="Assets\Extensions\GooglePlayCommon\Templates\GooglePlayerTemplate.cs" />
+     <Compile Include="Assets\Extensions\IOSNative\Core\IOSNative.cs" />
+     <Compile Include="Assets\Extensions\IOSNative\Core\IOSNativeAppEvents.cs" />
+     <Compile Include="Assets\Extensions\IOSNative\Core\IOSNativeSettings.cs" />
+     <Compile Include="Assets\Extensions\IOSNative\Core\IOSNativeUtility.cs" />
+     <Compile Include="Assets\Extensions\IOSNative\Core\ISN_Error.cs" />
+     <Compile Include="Assets\Extensions\IOSNative\Core\ISN_Singleton.cs" />
+     <Compile Include="Assets\Extensions\IOSNative\Enum\GCBoardTimeSpan.cs" />
+     <Compile Include="Assets\Extensions\IOSNative\Enum\GCCollectionType.cs" />
+     <Compile Include="Assets\Extensions\IOSNative\Enum\GameCenterDataSendType.cs" />
+     <Compile Include="Assets\Extensions\IOSNative\Enum\IOSDialogResult.cs" />
+     <Compile Include="Assets\Extensions\IOSNative\Enum\IOSGravity.cs" />
+     <Compile Include="Assets\Extensions\IOSNative\Enum\IOSStoreResultCode.cs" />
+     <Compile Include="Assets\Extensions\IOSNative\Enum\iAdGravity.cs" />
+     <Compile Include="Assets\Extensions\IOSNative\GameCenter\GameCenterManager.cs" />
+     <Compile Include="Assets\Extensions\IOSNative\GameCenter\GameCenterMultiplayer.cs" />
+     <Compile Include="Assets\Extensions\IOSNative\GameCenter\Templates\AchievementTemplate.cs" />
+     <Compile Include="Assets\Extensions\IOSNative\GameCenter\Templates\GCLeaderBoard.cs" />
+     <Compile Include="Assets\Extensions\IOSNative\GameCenter\Templates\GCScore.cs" />
+     <Compile Include="Assets\Extensions\IOSNative\GameCenter\Templates\GameCenterDataPackage.cs" />
+     <Compile Include="Assets\Extensions\IOSNative\GameCenter\Templates\GameCenterMatchData.cs" />
+     <Compile Include="Assets\Extensions\IOSNative\GameCenter\Templates\GameCenterPlayerTemplate.cs" />
+     <Compile Include="Assets\Extensions\IOSNative\GameCenter\Templates\ScoreCollection.cs" />
+     <Compile Include="Assets\Extensions\IOSNative\Market\IOSBillingInitChecker.cs" />
+     <Compile Include="Assets\Extensions\IOSNative\Market\IOSInAppPurchaseManager.cs" />
+     <Compile Include="Assets\Extensions\IOSNative\Market\IOSNativeMarketBridge.cs" />
+     <Compile Include="Assets\Extensions\IOSNative\Market\IOSStoreProductView.cs" />
+     <Compile Include="Assets\Extensions\IOSNative\Market\Templates\IOSStoreKitResponse.cs" />
+     <Compile Include="Assets\Extensions\IOSNative\Market\Templates\IOSStoreKitVerificationResponse.cs" />
+     <Compile Include="Assets\Extensions\IOSNative\Market\Templates\ProductTemplate.cs" />
+     <Compile Include="Assets\Extensions\IOSNative\Notifications\DeviceTokenListner.cs" />
+     <Compile Include="Assets\Extensions\IOSNative\Notifications\IOSNotificationController.cs" />
+     <Compile Include="Assets\Extensions\IOSNative\Notifications\IOSNotificationDeviceToken.cs" />
+     <Compile Include="Assets\Extensions\IOSNative\Other\Camera\IOSCamera.cs" />
+     <Compile Include="Assets\Extensions\IOSNative\Other\Camera\IOSImagePickResult.cs" />
+     <Compile Include="Assets\Extensions\IOSNative\Other\System\IOSSharedApplication.cs" />
+     <Compile Include="Assets\Extensions\IOSNative\PopUps\IOSDialog.cs" />
+     <Compile Include="Assets\Extensions\IOSNative\PopUps\IOSMessage.cs" />
+     <Compile Include="Assets\Extensions\IOSNative\PopUps\IOSRateUsPopUp.cs" />
+     <Compile Include="Assets\Extensions\IOSNative\PopUps\base\BaseIOSPopup.cs" />
+     <Compile Include="Assets\Extensions\IOSNative\PopUps\base\IOSNativePopUpManager.cs" />
+     <Compile Include="Assets\Extensions\IOSNative\Social\IOSSocialManager.cs" />
+     <Compile Include="Assets\Extensions\IOSNative\Templates\ISN_Result.cs" />
+     <Compile Include="Assets\Extensions\IOSNative\iAd\iAdBanner.cs" />
+     <Compile Include="Assets\Extensions\IOSNative\iAd\iAdBannerController.cs" />
+     <Compile Include="Assets\Extensions\IOSNative\iAd\iAdEvent.cs" />
+     <Compile Include="Assets\Extensions\IOSNative\iAd\iAdIOSBanner.cs" />
+     <Compile Include="Assets\Extensions\IOSNative\iAd\iAdIOSInterstitial.cs" />
+     <Compile Include="Assets\Extensions\IOSNative\iCloud\Templates\iCloudData.cs" />
+     <Compile Include="Assets\Extensions\IOSNative\iCloud\iCloudManager.cs" />
+     <Compile Include="Assets\Extensions\IOSNative\xExample\Scripts\Base\BaseIOSFeaturePreview.cs" />
+     <Compile Include="Assets\Extensions\IOSNative\xExample\Scripts\Billing\MarketExample.cs" />
+     <Compile Include="Assets\Extensions\IOSNative\xExample\Scripts\Billing\PaymentManagerExample.cs" />
+     <Compile Include="Assets\Extensions\IOSNative\xExample\Scripts\GameCenterExamples\GCFridnsLoadExample.cs" />
+     <Compile Include="Assets\Extensions\IOSNative\xExample\Scripts\GameCenterExamples\GameCenterExample.cs" />
+     <Compile Include="Assets\Extensions\IOSNative\xExample\Scripts\GameCenterExamples\LbCustomGUIExample.cs" />
+     <Compile Include="Assets\Extensions\IOSNative\xExample\Scripts\JSExample\JSHelper.cs" />
+     <Compile Include="Assets\Extensions\IOSNative\xExample\Scripts\Multiplayer\MultiplayerManagerExample.cs" />
+     <Compile Include="Assets\Extensions\IOSNative\xExample\Scripts\Multiplayer\ptpGame\GUI\ConectionButton.cs" />
+     <Compile Include="Assets\Extensions\IOSNative\xExample\Scripts\Multiplayer\ptpGame\GUI\DisconnectButton.cs" />
+     <Compile Include="Assets\Extensions\IOSNative\xExample\Scripts\Multiplayer\ptpGame\Utils\ByteByffer.cs" />
+     <Compile Include="Assets\Extensions\IOSNative\xExample\Scripts\Multiplayer\ptpGame\managers\ClickManager.cs" />
+     <Compile Include="Assets\Extensions\IOSNative\xExample\Scripts\Multiplayer\ptpGame\managers\NetwrokManager.cs" />
+     <Compile Include="Assets\Extensions\IOSNative\xExample\Scripts\Multiplayer\ptpGame\managers\PTPGameController.cs" />
+     <Compile Include="Assets\Extensions\IOSNative\xExample\Scripts\Multiplayer\ptpGame\packages\BasePackage.cs" />
+     <Compile Include="Assets\Extensions\IOSNative\xExample\Scripts\Multiplayer\ptpGame\packages\ObjectCreatePackage.cs" />
+     <Compile Include="Assets\Extensions\IOSNative\xExample\Scripts\Other\AppEventHandlerExample.cs" />
+     <Compile Include="Assets\Extensions\IOSNative\xExample\Scripts\Other\IOSSocialUseExample.cs" />
+     <Compile Include="Assets\Extensions\IOSNative\xExample\Scripts\Other\NativeIOSActionsExample.cs" />
+     <Compile Include="Assets\Extensions\IOSNative\xExample\Scripts\Other\NotificationExample.cs" />
+     <Compile Include="Assets\Extensions\IOSNative\xExample\Scripts\Other\PopUpExamples.cs" />
+     <Compile Include="Assets\Extensions\IOSNative\xExample\Scripts\Other\iCloudUseExample.cs" />
+     <Compile Include="Assets\Extensions\IOSNative\xExample\Scripts\Preview\IOSNativeFeaturesPreview.cs" />
+     <Compile Include="Assets\Extensions\IOSNative\xExample\Scripts\Preview\IOSNativePreviewBackButton.cs" />
+     <Compile Include="Assets\Extensions\IOSNative\xExample\Scripts\iAd Examples\iAdUseExample.cs" />
+     <Compile Include="Assets\Extensions\MobileNativePopUps\Example\MNFeaturePreview.cs" />
+     <Compile Include="Assets\Extensions\MobileNativePopUps\Example\MNUseExample.cs" />
+     <Compile Include="Assets\Extensions\MobileNativePopUps\Scripts\Core\MNP.cs" />
+     <Compile Include="Assets\Extensions\MobileNativePopUps\Scripts\Core\MNPopup.cs" />
+     <Compile Include="Assets\Extensions\MobileNativePopUps\Scripts\Core\MobileNativeDialog.cs" />
+     <Compile Include="Assets\Extensions\MobileNativePopUps\Scripts\Core\MobileNativeMessage.cs" />
+     <Compile Include="Assets\Extensions\MobileNativePopUps\Scripts\Core\MobileNativeRateUs.cs" />
+     <Compile Include="Assets\Extensions\MobileNativePopUps\Scripts\Enum\MNDialogResult.cs" />
+     <Compile Include="Assets\Extensions\MobileNativePopUps\Scripts\Platfroms\AndroidImpl\PopUps\Base\MNAndroidNative.cs" />
+     <Compile Include="Assets\Extensions\MobileNativePopUps\Scripts\Platfroms\AndroidImpl\PopUps\MNAndroidDialog.cs" />
+     <Compile Include="Assets\Extensions\MobileNativePopUps\Scripts\Platfroms\AndroidImpl\PopUps\MNAndroidMessage.cs" />
+     <Compile Include="Assets\Extensions\MobileNativePopUps\Scripts\Platfroms\AndroidImpl\PopUps\MNAndroidRateUsPopUp.cs" />
+     <Compile Include="Assets\Extensions\MobileNativePopUps\Scripts\Platfroms\IOSImpl\PopUps\MNIOSDialog.cs" />
+     <Compile Include="Assets\Extensions\MobileNativePopUps\Scripts\Platfroms\IOSImpl\PopUps\MNIOSMessage.cs" />
+     <Compile Include="Assets\Extensions\MobileNativePopUps\Scripts\Platfroms\IOSImpl\PopUps\MNIOSRateUsPopUp.cs" />
+     <Compile Include="Assets\Extensions\MobileNativePopUps\Scripts\Platfroms\IOSImpl\PopUps\base\MNIOSNative.cs" />
+     <Compile Include="Assets\Extensions\MobileNativePopUps\Scripts\Platfroms\WP8Impl\PopUps\MNWP8Dialog.cs" />
+     <Compile Include="Assets\Extensions\MobileNativePopUps\Scripts\Platfroms\WP8Impl\PopUps\MNWP8Message.cs" />
+     <Compile Include="Assets\Extensions\MobileNativePopUps\Scripts\Platfroms\WP8Impl\PopUps\MNWP8RateUsPopUp.cs" />
+     <Compile Include="Assets\Extensions\MobileNativePopUps\Scripts\Platfroms\WP8Impl\PopUps\base\BaseWP8Popup.cs" />
+     <Compile Include="Assets\Extensions\StansAssetsCommon\FileStaticAPI.cs" />
+     <Compile Include="Assets\Extensions\StansAssetsCommon\SAC_Singleton.cs" />
+     <Compile Include="Assets\Extensions\StansAssetsCommon\SA_ScreenShotMaker.cs" />
+     <Compile Include="Assets\Extensions\StansAssetsPreviewUI\Scripts\SA_UI_Scripts\DefaultPreviewButton.cs" />
+     <Compile Include="Assets\Extensions\StansAssetsPreviewUI\Scripts\SA_UI_Scripts\SALevelLoader.cs" />
+     <Compile Include="Assets\Extensions\StansAssetsPreviewUI\Scripts\SA_UI_Scripts\SALoadedSceneOnClick.cs" />
+     <Compile Include="Assets\Extensions\StansAssetsPreviewUI\Scripts\SA_UI_Scripts\SAOnClickAction.cs" />
+     <Compile Include="Assets\Extensions\StansAssetsPreviewUI\Scripts\SA_UI_Scripts\SAOpenUrlOnClick.cs" />
+     <Compile Include="Assets\Extensions\StansAssetsPreviewUI\Scripts\SA_UI_Scripts\SASendMessageOnClick.cs" />
+     <Compile Include="Assets\Extensions\StansAssetsPreviewUI\Scripts\SA_UI_Scripts\SA_BackButton.cs" />
+     <Compile Include="Assets\Extensions\StansAssetsPreviewUI\Scripts\SA_UI_Scripts\SA_Label.cs" />
+     <Compile Include="Assets\Extensions\StansAssetsPreviewUI\Scripts\SA_UI_Scripts\SA_PartisipantUI.cs" />
+     <Compile Include="Assets\Extensions\StansAssetsPreviewUI\Scripts\SA_UI_Scripts\SA_StatusBar.cs" />
+     <Compile Include="Assets\Extensions\StansAssetsPreviewUI\Scripts\SA_UI_Scripts\SA_Texture.cs" />
+     <Compile Include="Assets\Extensions\StansAssetsPreviewUI\Scripts\ScreenPlacementExtension\PreviewScreenUtil.cs" />
+     <Compile Include="Assets\Extensions\StansAssetsPreviewUI\Scripts\ScreenPlacementExtension\ScreenPlacement.cs" />
+     <Compile Include="Assets\Extensions\StansAssetsPreviewUI\Scripts\ScreenPlacementExtension\ScreenPlacementExtension.cs" />
+     <Compile Include="Assets\Extensions\StansAssetsPreviewUI\Scripts\ScreenPlacementExtension\ScreenScaler.cs" />
+     <Compile Include="Assets\Extensions\StansAssetsPreviewUI\Scripts\ScreenPlacementExtension\XScaleModifayer.cs" />
+     <Compile Include="Assets\Extensions\UltimateMobile\Examples\Scripts\Ad\UM_AdExample.cs" />
+     <Compile Include="Assets\Extensions\UltimateMobile\Examples\Scripts\Billing\UM_BillingExample.cs" />
+     <Compile Include="Assets\Extensions\UltimateMobile\Examples\Scripts\GameService\UM_GameServiceExample.cs" />
+     <Compile Include="Assets\Extensions\UltimateMobile\Examples\Scripts\Other\UM_ExampleStatusBar.cs" />
+     <Compile Include="Assets\Extensions\UltimateMobile\Examples\Scripts\Other\UM_NativeAPIExample.cs" />
+     <Compile Include="Assets\Extensions\UltimateMobile\Examples\Scripts\Social\UM_SocialExample.cs" />
+     <Compile Include="Assets\Extensions\UltimateMobile\Examples\Scripts\WM_Preview.cs" />
+     <Compile Include="Assets\Extensions\UltimateMobile\Scripts\Ad\UM_AdManager.cs" />
+     <Compile Include="Assets\Extensions\UltimateMobile\Scripts\Core\UltimateMobileSettings.cs" />
+     <Compile Include="Assets\Extensions\UltimateMobile\Scripts\Enums\UM_ConnectionState.cs" />
+     <Compile Include="Assets\Extensions\UltimateMobile\Scripts\Enums\UM_IOSAdEngineOprions.cs" />
+     <Compile Include="Assets\Extensions\UltimateMobile\Scripts\Enums\UM_WP8AdEngineOprions.cs" />
+     <Compile Include="Assets\Extensions\UltimateMobile\Scripts\GameService\Manage\UM_GameServiceManager.cs" />
+     <Compile Include="Assets\Extensions\UltimateMobile\Scripts\GameService\Models\UM_Achievement.cs" />
+     <Compile Include="Assets\Extensions\UltimateMobile\Scripts\GameService\Models\UM_Leaderboard.cs" />
+     <Compile Include="Assets\Extensions\UltimateMobile\Scripts\GameService\Templates\GameServicePlayerTemplate.cs" />
+     <Compile Include="Assets\Extensions\UltimateMobile\Scripts\InApps\Manage\UM_InAppPurchaseManager.cs" />
+     <Compile Include="Assets\Extensions\UltimateMobile\Scripts\InApps\Models\UM_BIllingConnectionResult.cs" />
+     <Compile Include="Assets\Extensions\UltimateMobile\Scripts\InApps\Models\UM_InAppProduct.cs" />
+     <Compile Include="Assets\Extensions\UltimateMobile\Scripts\InApps\Models\UM_PurchaseResult.cs" />
+     <Compile Include="Assets\Extensions\UltimateMobile\Scripts\InApps\Templates\UM_InAppProductTemplate.cs" />
+     <Compile Include="Assets\Extensions\UltimateMobile\Scripts\NativeAPI\Camera\UM_Camera.cs" />
+     <Compile Include="Assets\Extensions\UltimateMobile\Scripts\NativeAPI\Camera\UM_ImagePickResult.cs" />
+     <Compile Include="Assets\Extensions\UltimateMobile\Scripts\Social\UM_ShareUtility.cs" />
+     <Compile Include="Assets\Extensions\UltimateMobile\Scripts\Templates\UM_BaseResult.cs" />
+     <Compile Include="Assets\Extensions\WP8Native\Enum\WP8DialogResult.cs" />
+     <Compile Include="Assets\Extensions\WP8Native\Enum\WP8PurchaseCodes.cs" />
+     <Compile Include="Assets\Extensions\WP8Native\Enum\WP8PurchaseProductType.cs" />
+     <Compile Include="Assets\Extensions\WP8Native\Market\WP8InAppPurchasesManager.cs" />
+     <Compile Include="Assets\Extensions\WP8Native\Market\WP8ProductTemplate.cs" />
+     <Compile Include="Assets\Extensions\WP8Native\Market\WP8PurchseResponce.cs" />
+     <Compile Include="Assets\Extensions\WP8Native\PopUps\WP8Dialog.cs" />
+     <Compile Include="Assets\Extensions\WP8Native\PopUps\WP8Message.cs" />
+     <Compile Include="Assets\Extensions\WP8Native\PopUps\WP8RateUsPopUp.cs" />
+     <Compile Include="Assets\Extensions\WP8Native\PopUps\base\WP8PopupBase.cs" />
+     <Compile Include="Assets\Extensions\WP8Native\Utils\WP8NativeUtils.cs" />
+     <Compile Include="Assets\Extensions\WP8Native\WPUtils\WPN_TextureLoader.cs" />
+     <Compile Include="Assets\Extensions\WP8Native\xExamples\Scripts\Base\WP8FeaturesExample.cs" />
+     <Compile Include="Assets\Extensions\WP8Native\xExamples\Scripts\Base\WP8NativePreviewBackButton.cs" />
+     <Compile Include="Assets\Extensions\WP8Native\xExamples\Scripts\Base\WPNFeaturePreview.cs" />
+     <Compile Include="Assets\Extensions\WP8Native\xExamples\Scripts\Market\WPM_MarketExample.cs" />
+     <Compile Include="Assets\Extensions\WP8Native\xExamples\Scripts\Market\WPN_BillingManagerExample.cs" />
+     <Compile Include="Assets\Extensions\WP8Native\xExamples\Scripts\Other\WPN_PopUpExamples.cs" />
+     <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\Game\EquipItems.cs" />
+     <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\Game\EquipRandomItem.cs" />
+     <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\Game\UICursor.cs" />
+     <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\Game\UIEquipmentSlot.cs" />
+     <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\Game\UIItemSlot.cs" />
+     <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\Game\UIItemStorage.cs" />
+     <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\Game\UIStorageSlot.cs" />
+     <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\System\InvAttachmentPoint.cs" />
+     <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\System\InvBaseItem.cs" />
+     <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\System\InvDatabase.cs" />
+     <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\System\InvEquipment.cs" />
+     <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\System\InvGameItem.cs" />
+     <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\System\InvStat.cs" />
+     <Compile Include="Assets\NGUI\Examples\Scripts\Other\ChatInput.cs" />
+     <Compile Include="Assets\NGUI\Examples\Scripts\Other\DownloadTexture.cs" />
+     <Compile Include="Assets\NGUI\Examples\Scripts\Other\EnvelopContent.cs" />
+     <Compile Include="Assets\NGUI\Examples\Scripts\Other\ExampleDragDropItem.cs" />
+     <Compile Include="Assets\NGUI\Examples\Scripts\Other\ExampleDragDropSurface.cs" />
+     <Compile Include="Assets\NGUI\Examples\Scripts\Other\LagPosition.cs" />
+     <Compile Include="Assets\NGUI\Examples\Scripts\Other\LagRotation.cs" />
+     <Compile Include="Assets\NGUI\Examples\Scripts\Other\LoadLevelOnClick.cs" />
+     <Compile Include="Assets\NGUI\Examples\Scripts\Other\LookAtTarget.cs" />
+     <Compile Include="Assets\NGUI\Examples\Scripts\Other\OpenURLOnClick.cs" />
+     <Compile Include="Assets\NGUI\Examples\Scripts\Other\PanWithMouse.cs" />
+     <Compile Include="Assets\NGUI\Examples\Scripts\Other\PlayIdleAnimations.cs" />
+     <Compile Include="Assets\NGUI\Examples\Scripts\Other\SetColorOnSelection.cs" />
+     <Compile Include="Assets\NGUI\Examples\Scripts\Other\Spin.cs" />
+     <Compile Include="Assets\NGUI\Examples\Scripts\Other\SpinWithMouse.cs" />
+     <Compile Include="Assets\NGUI\Examples\Scripts\Other\Tutorial5.cs" />
+     <Compile Include="Assets\NGUI\Examples\Scripts\Other\UISliderColors.cs" />
+     <Compile Include="Assets\NGUI\Examples\Scripts\Other\WindowAutoYaw.cs" />
+     <Compile Include="Assets\NGUI\Examples\Scripts\Other\WindowDragTilt.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\LanguageSelection.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\TypewriterEffect.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UIButton.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UIButtonActivate.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UIButtonColor.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UIButtonKeys.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UIButtonMessage.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UIButtonOffset.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UIButtonRotation.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UIButtonScale.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UICenterOnChild.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UICenterOnClick.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UIDragCamera.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UIDragDropContainer.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UIDragDropItem.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UIDragDropRoot.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UIDragObject.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UIDragResize.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UIDragScrollView.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UIDraggableCamera.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UIEventTrigger.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UIForwardEvents.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UIGrid.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UIImageButton.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UIKeyBinding.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UIKeyNavigation.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UIPlayAnimation.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UIPlaySound.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UIPlayTween.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UIPopupList.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UIProgressBar.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UISavedOption.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UIScrollBar.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UIScrollView.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UISlider.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UISoundVolume.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UITable.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UIToggle.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UIToggledComponents.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UIToggledObjects.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UIWidgetContainer.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UIWrapContent.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Internal\ActiveAnimation.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Internal\AnimationOrTween.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Internal\BMFont.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Internal\BMGlyph.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Internal\BMSymbol.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Internal\BetterList.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Internal\ByteReader.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Internal\EventDelegate.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Internal\Localization.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Internal\NGUIDebug.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Internal\NGUIMath.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Internal\NGUIText.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Internal\NGUITools.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Internal\PropertyBinding.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Internal\PropertyReference.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Internal\RealTime.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Internal\SpringPanel.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Internal\UIBasicSprite.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Internal\UIDrawCall.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Internal\UIEventListener.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Internal\UIGeometry.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Internal\UIRect.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Internal\UISnapshotPoint.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Internal\UIWidget.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Tweening\AnimatedAlpha.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Tweening\AnimatedColor.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Tweening\SpringPosition.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Tweening\TweenAlpha.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Tweening\TweenColor.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Tweening\TweenFOV.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Tweening\TweenHeight.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Tweening\TweenOrthoSize.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Tweening\TweenPosition.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Tweening\TweenRotation.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Tweening\TweenScale.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Tweening\TweenTransform.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Tweening\TweenVolume.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Tweening\TweenWidth.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Tweening\UITweener.cs" />
+     <Compile Include="Assets\NGUI\Scripts\UI\UI2DSprite.cs" />
+     <Compile Include="Assets\NGUI\Scripts\UI\UI2DSpriteAnimation.cs" />
+     <Compile Include="Assets\NGUI\Scripts\UI\UIAnchor.cs" />
+     <Compile Include="Assets\NGUI\Scripts\UI\UIAtlas.cs" />
+     <Compile Include="Assets\NGUI\Scripts\UI\UICamera.cs" />
+     <Compile Include="Assets\NGUI\Scripts\UI\UIFont.cs" />
+     <Compile Include="Assets\NGUI\Scripts\UI\UIInput.cs" />
+     <Compile Include="Assets\NGUI\Scripts\UI\UILabel.cs" />
+     <Compile Include="Assets\NGUI\Scripts\UI\UILocalize.cs" />
+     <Compile Include="Assets\NGUI\Scripts\UI\UIOrthoCamera.cs" />
+     <Compile Include="Assets\NGUI\Scripts\UI\UIPanel.cs" />
+     <Compile Include="Assets\NGUI\Scripts\UI\UIRoot.cs" />
+     <Compile Include="Assets\NGUI\Scripts\UI\UISprite.cs" />
+     <Compile Include="Assets\NGUI\Scripts\UI\UISpriteAnimation.cs" />
+     <Compile Include="Assets\NGUI\Scripts\UI\UISpriteData.cs" />
+     <Compile Include="Assets\NGUI\Scripts\UI\UIStretch.cs" />
+     <Compile Include="Assets\NGUI\Scripts\UI\UITextList.cs" />
+     <Compile Include="Assets\NGUI\Scripts\UI\UITexture.cs" />
+     <Compile Include="Assets\NGUI\Scripts\UI\UITooltip.cs" />
+     <Compile Include="Assets\NGUI\Scripts\UI\UIViewport.cs" />
+     <Compile Include="Assets\TAPPSDK\Libs\Demigiant\DOTween\Examples\Basics.cs" />
+     <Compile Include="Assets\TAPPSDK\Libs\Demigiant\DOTween\Examples\Sequences.cs" />
+     <Compile Include="Assets\TAPPSDK\Libs\JSON\JSONObject.cs" />
+     <Compile Include="Assets\TAPPSDK\Libs\JSON\JSONTemplates.cs" />
+     <Compile Include="Assets\TAPPSDK\Libs\JSON\VectorTemplates.cs" />
+     <Compile Include="Assets\TAPPSDK\Libs\Plugins\UniWebViewEventProcessor.cs" />
+     <Compile Include="Assets\TAPPSDK\Libs\Plugins\UniWebViewPluginAndroid.cs" />
+     <Compile Include="Assets\TAPPSDK\Libs\Plugins\UniWebViewPluginMacEditor.cs" />
+     <Compile Include="Assets\TAPPSDK\Libs\Plugins\UniWebViewPluginWP.cs" />
+     <Compile Include="Assets\TAPPSDK\Libs\Plugins\UniWebViewPluginiOS.cs" />
+     <Compile Include="Assets\TAPPSDK\Libs\UniWebView\Demo\UniWebDemo.cs" />
+     <Compile Include="Assets\TAPPSDK\Libs\UniWebView\Demo\UniWebViewCube.cs" />
+     <Compile Include="Assets\TAPPSDK\Libs\UniWebView\Script\Helper\UniWebViewHelper.cs" />
+     <Compile Include="Assets\TAPPSDK\Libs\UniWebView\Script\UniWebView.cs" />
+     <Compile Include="Assets\TAPPSDK\Libs\UniWebView\Script\UniWebViewEdgeInsets.cs" />
+     <Compile Include="Assets\TAPPSDK\Libs\UniWebView\Script\UniWebViewMessage.cs" />
+     <Compile Include="Assets\TAPPSDK\Libs\UniWebView\Script\UniWebViewOrientation.cs" />
+     <Compile Include="Assets\TAPPSDK\TAPPFloating.cs" />
+     <Compile Include="Assets\TAPPSDK\TAPPNotDestroy.cs" />
+     <Compile Include="Assets\TAPPSDK\TAPPSDK.cs" />
+     <Compile Include="Assets\UniRx\Examples\Sample01_ObservableWWW.cs" />
+     <Compile Include="Assets\UniRx\Examples\Sample02_ObservableTriggers.cs" />
+     <Compile Include="Assets\UniRx\Examples\Sample03_GameObjectAsObservable.cs" />
+     <Compile Include="Assets\UniRx\Examples\Sample04_ConvertFromUnityCallback.cs" />
+     <Compile Include="Assets\UniRx\Examples\Sample05_ConvertFromCoroutine.cs" />
+     <Compile Include="Assets\UniRx\Examples\Sample06_ConvertToCoroutine.cs" />
+     <Compile Include="Assets\UniRx\Examples\Sample07_OrchestratIEnumerator.cs" />
+     <Compile Include="Assets\UniRx\Examples\Sample08_DetectDoubleClick.cs" />
+     <Compile Include="Assets\UniRx\Examples\Sample09_EventHandling.cs" />
+     <Compile Include="Assets\UniRx\Examples\Sample10_MainThreadDispatcher.cs" />
+     <Compile Include="Assets\UniRx\Examples\Sample11_Logger.cs" />
+     <Compile Include="Assets\UniRx\Examples\Sample12_ReactiveProperty.cs" />
+     <Compile Include="Assets\UniRx\Examples\Sample13_ToDoApp.cs" />
+     <Compile Include="Assets\UniRx\Examples\Sample14_CubeLevel1.cs" />
+     <Compile Include="Assets\UniRx\Examples\Sample14_CubeLevel2.cs" />
+     <Compile Include="Assets\UniRx\Examples\Sample14_PresenterBase.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Asynchronous\WebRequestExtensions.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Disposables\BooleanDisposable.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Disposables\CompositeDisposable.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Disposables\DictionaryDisposable.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Disposables\Disposable.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Disposables\DisposableExtensions.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Disposables\ICancelable.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Disposables\MultipleAssignmentDisposable.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Disposables\RefCountDisposable.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Disposables\ScheduledDisposable.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Disposables\SerialDisposable.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Disposables\SingleAssignmentDisposable.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Disposables\StableCompositeDisposable.cs" />
+     <Compile Include="Assets\UniRx\Scripts\EventPattern.cs" />
+     <Compile Include="Assets\UniRx\Scripts\InternalUtil\AscynLock.cs" />
+     <Compile Include="Assets\UniRx\Scripts\InternalUtil\ImmutableList.cs" />
+     <Compile Include="Assets\UniRx\Scripts\InternalUtil\ListObserver.cs" />
+     <Compile Include="Assets\UniRx\Scripts\InternalUtil\PriorityQueue.cs" />
+     <Compile Include="Assets\UniRx\Scripts\InternalUtil\ReflectionAccessor.cs" />
+     <Compile Include="Assets\UniRx\Scripts\InternalUtil\ScheduledItem.cs" />
+     <Compile Include="Assets\UniRx\Scripts\InternalUtil\ThreadSafeQueueWorker.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Notification.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Notifiers\BooleanNotifier.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Notifiers\CountNotifier.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Notifiers\MessageBroker.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Notifiers\ScheduledNotifier.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Observable.Aggregate.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Observable.Binding.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Observable.Blocking.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Observable.Concatenate.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Observable.Concurrency.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Observable.Conversions.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Observable.Creation.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Observable.ErrorHandling.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Observable.Events.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Observable.FromAsync.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Observable.Joins.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Observable.Paging.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Observable.Time.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Observable.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Observer.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Operators\Aggregate.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Operators\Amb.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Operators\AsObservable.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Operators\AsUnitObservable.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Operators\Buffer.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Operators\Cast.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Operators\Catch.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Operators\CombineLatest.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Operators\Concat.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Operators\Create.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Operators\DefaultIfEmpty.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Operators\Defer.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Operators\Delay.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Operators\DelaySubscription.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Operators\Dematerialize.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Operators\Distinct.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Operators\DistinctUntilChanged.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Operators\Do.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Operators\Empty.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Operators\Finally.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Operators\First.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Operators\ForEachAsync.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Operators\FromEvent.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Operators\IgnoreElements.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Operators\Last.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Operators\Materialize.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Operators\Merge.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Operators\Never.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Operators\ObserveOn.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Operators\OfType.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Operators\OperatorObservableBase.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Operators\OperatorObserverBase.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Operators\PairWise.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Operators\Range.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Operators\RefCount.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Operators\Repeat.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Operators\RepeatSafe.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Operators\Return.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Operators\Sample.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Operators\Scan.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Operators\Select.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Operators\SelectMany.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Operators\Single.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Operators\Skip.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Operators\SkipUntil.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Operators\SkipWhile.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Operators\Start.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Operators\StartWith.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Operators\SubscribeOn.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Operators\Switch.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Operators\Synchronize.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Operators\Take.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Operators\TakeUntil.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Operators\TakeWhile.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Operators\Throttle.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Operators\ThrottleFirst.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Operators\Throw.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Operators\TimeInterval.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Operators\Timeout.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Operators\Timer.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Operators\Timestamp.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Operators\ToArray.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Operators\ToList.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Operators\ToObservable.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Operators\Wait.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Operators\WhenAll.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Operators\Where.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Operators\Zip.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Schedulers\CurrentThreadScheduler.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Schedulers\IScheduler.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Schedulers\ImmediateScheduler.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Schedulers\Scheduler.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Schedulers\ThreadPoolScheduler.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Subjects\AsyncSubject.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Subjects\BehaviorSubject.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Subjects\ConnectableObservable.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Subjects\ISubject.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Subjects\ReplaySubject.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Subjects\Subject.cs" />
+     <Compile Include="Assets\UniRx\Scripts\System\IObservable.cs" />
+     <Compile Include="Assets\UniRx\Scripts\System\IObserver.cs" />
+     <Compile Include="Assets\UniRx\Scripts\System\IOptimizedObservable.cs" />
+     <Compile Include="Assets\UniRx\Scripts\System\IProgress.cs" />
+     <Compile Include="Assets\UniRx\Scripts\System\Tuple.cs" />
+     <Compile Include="Assets\UniRx\Scripts\System\Unit.cs" />
+     <Compile Include="Assets\UniRx\Scripts\TimeInterval.cs" />
+     <Compile Include="Assets\UniRx\Scripts\Timestamped.cs" />
+     <Compile Include="Assets\UniRx\Scripts\UnityEngineBridge\AotSafeExtensions.cs" />
+     <Compile Include="Assets\UniRx\Scripts\UnityEngineBridge\AsyncOperationExtensions.cs" />
+     <Compile Include="Assets\UniRx\Scripts\UnityEngineBridge\CancellationToken.cs" />
+     <Compile Include="Assets\UniRx\Scripts\UnityEngineBridge\Diagnostics\LogEntry.cs" />
+     <Compile Include="Assets\UniRx\Scripts\UnityEngineBridge\Diagnostics\LogEntryExtensions.cs" />
+     <Compile Include="Assets\UniRx\Scripts\UnityEngineBridge\Diagnostics\Logger.cs" />
+     <Compile Include="Assets\UniRx\Scripts\UnityEngineBridge\Diagnostics\ObservableLogger.cs" />
+     <Compile Include="Assets\UniRx\Scripts\UnityEngineBridge\Diagnostics\UnityDebugSink.cs" />
+     <Compile Include="Assets\UniRx\Scripts\UnityEngineBridge\InspectableReactiveProperty.cs" />
+     <Compile Include="Assets\UniRx\Scripts\UnityEngineBridge\InspectorDisplayDrawer.cs" />
+     <Compile Include="Assets\UniRx\Scripts\UnityEngineBridge\LazyTask.cs" />
+     <Compile Include="Assets\UniRx\Scripts\UnityEngineBridge\LifetimeDisposableExtensions.cs" />
+     <Compile Include="Assets\UniRx\Scripts\UnityEngineBridge\MainThreadDispatcher.cs" />
+     <Compile Include="Assets\UniRx\Scripts\UnityEngineBridge\MainThreadScheduler.cs" />
+     <Compile Include="Assets\UniRx\Scripts\UnityEngineBridge\Observable.Unity.cs" />
+     <Compile Include="Assets\UniRx\Scripts\UnityEngineBridge\ObservableMonoBehaviour.cs" />
+     <Compile Include="Assets\UniRx\Scripts\UnityEngineBridge\ObservableWWW.cs" />
+     <Compile Include="Assets\UniRx\Scripts\UnityEngineBridge\ObserveExtensions.cs" />
+     <Compile Include="Assets\UniRx\Scripts\UnityEngineBridge\Operators\DelayFrame.cs" />
+     <Compile Include="Assets\UniRx\Scripts\UnityEngineBridge\Operators\DelayFrameSubscription.cs" />
+     <Compile Include="Assets\UniRx\Scripts\UnityEngineBridge\Operators\FromCoroutine.cs" />
+     <Compile Include="Assets\UniRx\Scripts\UnityEngineBridge\Operators\RepeatUntil.cs" />
+     <Compile Include="Assets\UniRx\Scripts\UnityEngineBridge\Operators\SampleFrame.cs" />
+     <Compile Include="Assets\UniRx\Scripts\UnityEngineBridge\Operators\SubscribeOnMainThread.cs" />
+     <Compile Include="Assets\UniRx\Scripts\UnityEngineBridge\Operators\ThrottleFirstFrame.cs" />
+     <Compile Include="Assets\UniRx\Scripts\UnityEngineBridge\Operators\ThrottleFrame.cs" />
+     <Compile Include="Assets\UniRx\Scripts\UnityEngineBridge\Operators\TimeoutFrame.cs" />
+     <Compile Include="Assets\UniRx\Scripts\UnityEngineBridge\PresenterBase.cs" />
+     <Compile Include="Assets\UniRx\Scripts\UnityEngineBridge\ReactiveCollection.cs" />
+     <Compile Include="Assets\UniRx\Scripts\UnityEngineBridge\ReactiveDictionary.cs" />
+     <Compile Include="Assets\UniRx\Scripts\UnityEngineBridge\ReactiveProperty.cs" />
+     <Compile Include="Assets\UniRx\Scripts\UnityEngineBridge\ScenePlaybackDetector.cs" />
+     <Compile Include="Assets\UniRx\Scripts\UnityEngineBridge\Triggers\ObservableAnimatorTrigger.cs" />
+     <Compile Include="Assets\UniRx\Scripts\UnityEngineBridge\Triggers\ObservableBeginDragTrigger.cs" />
+     <Compile Include="Assets\UniRx\Scripts\UnityEngineBridge\Triggers\ObservableCancelTrigger.cs" />
+     <Compile Include="Assets\UniRx\Scripts\UnityEngineBridge\Triggers\ObservableCanvasGroupChangedTrigger.cs" />
+     <Compile Include="Assets\UniRx\Scripts\UnityEngineBridge\Triggers\ObservableCollision2DTrigger.cs" />
+     <Compile Include="Assets\UniRx\Scripts\UnityEngineBridge\Triggers\ObservableCollisionTrigger.cs" />
+     <Compile Include="Assets\UniRx\Scripts\UnityEngineBridge\Triggers\ObservableDeselectTrigger.cs" />
+     <Compile Include="Assets\UniRx\Scripts\UnityEngineBridge\Triggers\ObservableDestroyTrigger.cs" />
+     <Compile Include="Assets\UniRx\Scripts\UnityEngineBridge\Triggers\ObservableDragTrigger.cs" />
+     <Compile Include="Assets\UniRx\Scripts\UnityEngineBridge\Triggers\ObservableDropTrigger.cs" />
+     <Compile Include="Assets\UniRx\Scripts\UnityEngineBridge\Triggers\ObservableEnableTrigger.cs" />
+     <Compile Include="Assets\UniRx\Scripts\UnityEngineBridge\Triggers\ObservableEndDragTrigger.cs" />
+     <Compile Include="Assets\UniRx\Scripts\UnityEngineBridge\Triggers\ObservableEventTrigger.cs" />
+     <Compile Include="Assets\UniRx\Scripts\UnityEngineBridge\Triggers\ObservableFixedUpdateTrigger.cs" />
+     <Compile Include="Assets\UniRx\Scripts\UnityEngineBridge\Triggers\ObservableInitializePotentialDragTrigger.cs" />
+     <Compile Include="Assets\UniRx\Scripts\UnityEngineBridge\Triggers\ObservableLateUpdateTrigger.cs" />
+     <Compile Include="Assets\UniRx\Scripts\UnityEngineBridge\Triggers\ObservableMouseTrigger.cs" />
+     <Compile Include="Assets\UniRx\Scripts\UnityEngineBridge\Triggers\ObservableMoveTrigger.cs" />
+     <Compile Include="Assets\UniRx\Scripts\UnityEngineBridge\Triggers\ObservablePointerClickTrigger.cs" />
+     <Compile Include="Assets\UniRx\Scripts\UnityEngineBridge\Triggers\ObservablePointerDownTrigger.cs" />
+     <Compile Include="Assets\UniRx\Scripts\UnityEngineBridge\Triggers\ObservablePointerEnterTrigger.cs" />
+     <Compile Include="Assets\UniRx\Scripts\UnityEngineBridge\Triggers\ObservablePointerExitTrigger.cs" />
+     <Compile Include="Assets\UniRx\Scripts\UnityEngineBridge\Triggers\ObservablePointerUpTrigger.cs" />
+     <Compile Include="Assets\UniRx\Scripts\UnityEngineBridge\Triggers\ObservableRectTransformTrigger.cs" />
+     <Compile Include="Assets\UniRx\Scripts\UnityEngineBridge\Triggers\ObservableScrollTrigger.cs" />
+     <Compile Include="Assets\UniRx\Scripts\UnityEngineBridge\Triggers\ObservableSelectTrigger.cs" />
+     <Compile Include="Assets\UniRx\Scripts\UnityEngineBridge\Triggers\ObservableStateMachineTrigger.cs" />
+     <Compile Include="Assets\UniRx\Scripts\UnityEngineBridge\Triggers\ObservableSubmitTrigger.cs" />
+     <Compile Include="Assets\UniRx\Scripts\UnityEngineBridge\Triggers\ObservableTransformChangedTrigger.cs" />
+     <Compile Include="Assets\UniRx\Scripts\UnityEngineBridge\Triggers\ObservableTrigger2DTrigger.cs" />
+     <Compile Include="Assets\UniRx\Scripts\UnityEngineBridge\Triggers\ObservableTriggerBase.cs" />
+     <Compile Include="Assets\UniRx\Scripts\UnityEngineBridge\Triggers\ObservableTriggerExtensions.Component.cs" />
+     <Compile Include="Assets\UniRx\Scripts\UnityEngineBridge\Triggers\ObservableTriggerExtensions.cs" />
+     <Compile Include="Assets\UniRx\Scripts\UnityEngineBridge\Triggers\ObservableTriggerTrigger.cs" />
+     <Compile Include="Assets\UniRx\Scripts\UnityEngineBridge\Triggers\ObservableUpdateSelectedTrigger.cs" />
+     <Compile Include="Assets\UniRx\Scripts\UnityEngineBridge\Triggers\ObservableUpdateTrigger.cs" />
+     <Compile Include="Assets\UniRx\Scripts\UnityEngineBridge\Triggers\ObservableVisibleTrigger.cs" />
+     <Compile Include="Assets\UniRx\Scripts\UnityEngineBridge\TypedMonoBehaviour.cs" />
+     <Compile Include="Assets\UniRx\Scripts\UnityEngineBridge\UnityEqualityComparer.cs" />
+     <Compile Include="Assets\UniRx\Scripts\UnityEngineBridge\UnityEventExtensions.cs" />
+     <Compile Include="Assets\UniRx\Scripts\UnityEngineBridge\UnityGraphicExtensions.cs" />
+     <Compile Include="Assets\UniRx\Scripts\UnityEngineBridge\UnityUIComponentExtensions.cs" />
+     <Compile Include="Assets\UniRx\Scripts\UnityEngineBridge\YieldInstructionCache.cs" />
+     <Compile Include="Assets\UniRx\Scripts\UnityWinRTBridge\Thread.cs" />
+     <Compile Include="Assets\UniRx\Scripts\UnityWinRTBridge\ThreadPoolScheduler_UnityWinRT.cs" />
+     <None Include="Assets\NGUI\Examples\Shaders\Unlit - Depth Cutout.shader" />
+     <None Include="Assets\NGUI\ReadMe - 3.7.0.txt" />
+     <None Include="Assets\TAPPSDK\Libs\Demigiant\DOTween\readme.txt" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Text 2.shader" />
+     <None Include="Assets\Plugins\StansAssets\Versions\GMA_VersionInfo.txt" />
+     <None Include="Assets\TAPPSDK\Libs\UniWebView\ChangeLog.txt" />
+     <None Include="Assets\NGUI\Examples\Models\Orc\Orc Skin.shader" />
+     <None Include="Assets\NGUI\Examples\Atlases\Wooden\Arimo20.txt" />
+     <None Include="Assets\NGUI\Examples\Atlases\Wooden\Arimo14.txt" />
+     <None Include="Assets\TAPPSDK\Libs\JSON\readme.txt" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Text 1.shader" />
+     <None Include="Assets\TAPPSDK\Libs\Demigiant\DOTween\DOTween50.xml" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored 2.shader" />
+     <None Include="Assets\NGUI\Examples\Shaders\Unlit - Masked Colored.shader" />
+     <None Include="Assets\Plugins\Android\res\values\version.xml" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored 3.shader" />
+     <None Include="Assets\NGUI\Examples\Atlases\Wooden\Arimo18.txt" />
+     <None Include="Assets\Plugins\StansAssets\Android\res\values\ids.xml" />
+     <None Include="Assets\NGUI\Examples\Atlases\SciFi\SciFi Font - Header.txt" />
+     <None Include="Assets\UniRx\ReadMe.txt" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored 1.shader" />
+     <None Include="Assets\NGUI\Examples\Atlases\Fantasy\Fantasy Font - Normal.txt" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored 3.shader" />
+     <None Include="Assets\NGUI\Examples\Atlases\Refractive\Refractive Font - Normal.txt" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored 2.shader" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Text 3.shader" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Packed 2.shader" />
+     <None Include="Assets\TAPPSDK\Libs\Demigiant\DOTween\DOTween46.xml" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Packed 1.shader" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored 1.shader" />
+     <None Include="Assets\TAPPSDK\Libs\Demigiant\DOTween\DOTween43.xml" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored.shader" />
+     <None Include="Assets\Plugins\StansAssets\Versions\AN_VersionInfo.txt" />
+     <None Include="Assets\TAPPSDK\Libs\UniWebView\Readme.txt" />
+     <None Include="Assets\Plugins\StansAssets\Android\res\values\analytics.xml" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored.shader" />
+     <None Include="Assets\Plugins\Pixelplacement\iTween\ReadMe!\ReadMe!.txt" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Text.shader" />
+     <None Include="Assets\Plugins\Android\res\values\ids.xml" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Packed.shader" />
+     <None Include="Assets\Plugins\Android\res\values\analytics.xml" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Packed 3.shader" />
+     <None Include="Assets\Extensions\GoogleMobileAd\Documentation\GMA_VersionNotes.txt" />
+     <None Include="Assets\NGUI\Examples\Shaders\Unlit - Additive Colored.shader" />
+     <None Include="Assets\NGUI\Examples\Atlases\Refractive\Refractive Font - Header.txt" />
+     <None Include="Assets\Plugins\StansAssets\Android\AndroidManifest.xml" />
+     <None Include="Assets\NGUI\Examples\Shaders\Refractive.shader" />
+     <None Include="Assets\Plugins\StansAssets\Android\res\values\version.xml" />
+     <None Include="Assets\NGUI\Examples\Shaders\Unlit - Depth.shader" />
+     <None Include="Assets\NGUI\Examples\Atlases\SciFi\SciFi Font - Normal.txt" />
+     <None Include="Assets\NGUI\Examples\Models\Orc Armor\Orc Armor.shader" />
+     <None Include="Assets\NGUI\Examples\Resources\Localization.txt" />
+     <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
+     <None Include="Assets\Plugins\StansAssets\Versions\UM_VersionInfo.txt" />
+     <None Include="Assets\Plugins\WP8\GoogleAds.xml" />
+     <None Include="Assets\TAPPSDK\Libs\Plugins\Android\AndroidManifest.xml" />
+ <Reference Include="UnityEngine.Advertisements">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UI">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="GoogleAdsWP8">
+ <HintPath>E:/Projects/Unity/ColorQuiz/Assets/Plugins/GoogleAdsWP8.dll</HintPath>
+ </Reference>
+ <Reference Include="PopUp">
+ <HintPath>E:/Projects/Unity/ColorQuiz/Assets/Plugins/PopUp.dll</HintPath>
+ </Reference>
+ <Reference Include="WP8Native">
+ <HintPath>E:/Projects/Unity/ColorQuiz/Assets/Plugins/WP8Native.dll</HintPath>
+ </Reference>
+ <Reference Include="WP8PopUps">
+ <HintPath>E:/Projects/Unity/ColorQuiz/Assets/Plugins/WP8PopUps.dll</HintPath>
+ </Reference>
+ <Reference Include="WP8PopUps">
+ <HintPath>E:/Projects/Unity/ColorQuiz/Assets/Plugins/StansAssets/WP8PopUps.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTween">
+ <HintPath>E:/Projects/Unity/ColorQuiz/Assets/TAPPSDK/Libs/Demigiant/DOTween/DOTween.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTween43">
+ <HintPath>E:/Projects/Unity/ColorQuiz/Assets/TAPPSDK/Libs/Demigiant/DOTween/DOTween43.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTween46">
+ <HintPath>E:/Projects/Unity/ColorQuiz/Assets/TAPPSDK/Libs/Demigiant/DOTween/DOTween46.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTween50">
+ <HintPath>E:/Projects/Unity/ColorQuiz/Assets/TAPPSDK/Libs/Demigiant/DOTween/DOTween50.dll</HintPath>
+ </Reference>
+ <Reference Include="UniWebViewWP">
+ <HintPath>E:/Projects/Unity/ColorQuiz/Assets/TAPPSDK/Libs/Plugins/UniWebViewWP.dll</HintPath>
+ </Reference>
+ <Reference Include="Mono.Cecil">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/Mono.Cecil.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+ <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{6D21A0EA-58D7-D61B-3CC8-5D77CC474460}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>

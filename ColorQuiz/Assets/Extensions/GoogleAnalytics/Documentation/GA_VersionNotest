@@ -1,0 +1,26 @@
+v1.7:
+Ability to use Player Settings as sours for App name and version
+AutoAppResumeTracking option added
+Auto System Language Tracking added
+
+AutoExceptionTracking fixed
+
+
+v1.6:
+Request cashing when no internet connection available Added
+
+v1.5:
+Test Mode Added
+
+
+v1.4:
+Multi Profiles support added
+PlayMaker Support Added
+
+1.3:
+Fixed WP8 compile issue
+Fixed BalackBerry deviceUniqueIdentifier issue
+Unity 4.5 Deprecated warnings fixed
+
+1.2:
+Bug fixes and more examples

@@ -1,0 +1,109 @@
+4.7:
+New:
+IOSInAppPurchaseManager RESTORE_TRANSACTION_COMPLETE event addded
+IOSSocialManager 
+New methods:
+public void SendMail(string subject, string body, string recipients)
+public void SendMail(string subject, string body, string recipients, Texture2D texture)
+New Events:
+MAIL_FAILED;
+MAIL_SUCCESS;
+
+New Actions:
+public Action<ISN_Result> OnFacebookPostResult;
+public Action<ISN_Result> OnTwitterPostResult;
+public Action<ISN_Result> OnMailResult;
+
+
+
+Fixes:
+ISN_RestorePurchases action fixed
+Minor Spelling fixes
+
+Refactor:
+LeaderBoardScoreData class removed
+GAME_CENTER_LEADER_BOARD_SCORE_LOADED event now contains GCScore as data
+
+New PlayMakerActions:
+ISN_SaveTextureToCameraRoll
+ISN_SaveScreenshotToCameraRoll
+ISN_LoadTextureFromGallery
+ISN_LoadTextureFromCamera
+
+
+4.6
+New Features:
+IOSNotificationController - REMOTE_NOTIFICATION_RECEIVED event added.
+
+
+PlayMaker Actions Added:
+ISN_RetriveGCPlayerId
+
+Minor Bug Fixes
+
+4.5:
+PlayMaker Actions Added:
+iCloud:
+  ISN_DataChanged
+  ISN_DataReceived
+  ISN_iCloudInit
+
+Notifications:
+  ISN_ApplicationIconBadgeNumber
+  ISN_CancelNotifications
+  ISN_RegisterForRemoteNotifications
+  ISN_ScheduleNotification
+  ISN_ShowNotificationBanner
+Game Center:
+ISN_GetAchivmentProgress
+ISN_ResetAchivments
+
+New Feature:
+GAME_CENTER_VIEW_DISSMISSED - event added
+
+
+
+4.4:
+
+New Features:
+Shared App API added
+New PlayMaker Actions
+Example Scenes Improved
+
+
+
+4.3:
+New Features:
+Save texture to camera roll API
+Save screenshot to camera roll API
+Camera Roll PlayMaker Actions
+
+Fixes:
+Conflict with Mobile Social Plugin Fixed
+
+Refactor:
+Example Scene Removed
+
+
+4.2:
+Minor Spelling fixes:
+
+4.1:
+New Features:
+SKStoreProductViewController 
+Native pre-loader 
+New PlayMaker Actions
+
+Plugin Code Refactor:
+IOSNative.h -> Removed
+IOSNative.mm -> Removed
+InAppPurchaseManager.m -> Removed
+IOSNative.instance.init -> Removed
+you do no have to call it anymore on your game init
+
+
+Fixes:
+Biling init event.
+Game Cneter player avatar loading 
+Unity 4.5 compatibility fix
+WP8 Compatibility Fix
